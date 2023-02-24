@@ -1,0 +1,202 @@
+:root {
+  --main-title-colour: #2e2f42;
+  --main-text-colour: #434455;
+  --accent-colour: #4d5ae5;
+  --main-bg-colour: #ffffff;
+}
+
+body {
+  background: var(--main-bg-colour);
+  color: var(--main-text-colour);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+
+  cursor: default;
+}
+ul {
+  list-style: none;
+}
+
+.logo {
+  color: #2e2f42;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: default;
+}
+.logo-part {
+  color: #4d5ae5;
+}
+
+/* Site-nav */
+.site-nav .link {
+  color: var(--main-title-colour);
+
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+
+  cursor: default;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #404bbf;
+}
+
+.site-nav .link.current {
+  color: #404bbf;
+}
+
+.link-addres {
+  color: var(--main-text-colour);
+
+  font-style: normal;
+
+  line-height: 1.5;
+  text-decoration: none;
+
+  cursor: default;
+}
+
+.link-addres:hover,
+.link-addres:focus {
+  color: #404bbf;
+}
+
+/* Hero */
+
+.hero {
+  background-color: #2e2f42;
+}
+
+.hero-title {
+  color: var(--main-bg-colour);
+
+  font-size: 56px;
+  line-height: 1.1;
+}
+
+.button {
+  background-color: var(--accent-colour);
+  color: #ffffff;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
+
+/* Hidden titles */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Sections */
+
+.section-title,
+.section-subtitle {
+  color: var(--main-title-colour);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.section-text {
+  color: var(--main-text-colour);
+
+  line-height: 1.5;
+}
+
+.section-descr {
+  background-color: #f4f4fd;
+}
+
+.section-team {
+  background-color: #f4f4fd;
+}
+.section-team-card {
+  background-color: #ffffff;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer .logo-footer {
+  color: #f4f4fd;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: default;
+}
+
+.footer-text {
+  color: #e7e9fc;
+
+  line-height: 1.5;
+}
+
+/* Page Portfolio */
+
+.button-portfolio {
+  background-color: #e7e9fc;
+}
+
+.button-portfolio-link {
+  color: #4d5ae5;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.button-portfolio-link:hover,
+.button-portfolio-link:focus {
+  background-color: #404bbf;
+  color: #ffffff;
+
+  cursor: pointer;
+}
