@@ -232,8 +232,9 @@ body {
 
 /* Page Portfolio */
 
-.button-portfolio {
-  background-color: #e7e9fc;
+.button-portfolio-list {
+  display: flex;
+  padding-top: 96px;
 }
 
 .button-portfolio-link {
@@ -256,3 +257,5 @@ body {
 .portfolio-list {
   margin-top: 72px;
 }
+
+.portfolio-section;
