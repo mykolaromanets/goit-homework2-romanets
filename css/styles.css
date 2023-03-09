@@ -3,6 +3,8 @@
   --main-text-colour: #434455;
   --accent-colour: #4d5ae5;
   --main-bg-colour: #ffffff;
+  --secondary-bg-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
 }
 
 /* RESET */
@@ -48,11 +50,31 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 
 /* Header */
 
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
+  margin-left: 76px;
+}
+.header-contacts {
+  display: flex;
+  gap: 40px;
+}
 .logo {
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
@@ -71,15 +93,14 @@ body {
 }
 
 .header {
-  padding: 24px 0;
+  padding: 24px 0 0 0;
 }
 
-/* Site-nav */
 .site-nav {
   display: flex;
   justify-content: left;
 }
-.site-nav .link {
+.header-list .link {
   color: var(--main-title-colour);
 
   font-weight: 500;
@@ -88,12 +109,12 @@ body {
 
   cursor: default;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-list .link:hover,
+.header-list .link:focus {
   color: #404bbf;
 }
 
-.site-nav .link.current {
+.header-list .link:active {
   color: #404bbf;
 }
 
@@ -129,7 +150,11 @@ body {
 
   font-size: 56px;
   line-height: 1.1;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
+  text-align: center;
+  width: 496px;
 }
 
 .button {
@@ -140,8 +165,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
+  min-width: 169px;
+  height: 56px;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   cursor: pointer;
 }
@@ -195,21 +223,62 @@ body {
   margin-top: 8px;
 }
 
-.section-descr {
-  background-color: #f4f4fd;
+.services-item {
+  display: flex;
+  gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services-item-list {
+  width: calc((100% - 72px) / 4);
+}
+
+.worker-name {
+  padding-top: 32px;
+}
+
+.examples-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .section-team {
-  background-color: #f4f4fd;
+  background-color: var(--secondary-bg-color);
+}
+
+.team-title {
+  padding-top: 102px;
+}
+
+.team-text {
+  padding-bottom: 32px;
+}
+
+.section-team-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .section-team-card {
-  background-color: #ffffff;
+  text-align: center;
+  background-color: var(--main-bg-colour);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
 
 .footer {
   background-color: #2e2f42;
+  height: 310px;
+}
+
+.footer-container {
+  height: 310px;
 }
 
 .footer .logo-footer {
@@ -222,19 +291,32 @@ body {
   text-transform: uppercase;
 
   cursor: default;
+  padding-top: 100px;
 }
 
 .footer-text {
-  color: #e7e9fc;
+  width: 264px;
   line-height: 1.5;
-  margin-top: 8px;
+  margin-top: 16px;
+  color: var(--footer-text-color);
+}
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* Page Portfolio */
 
+.container-portfolio {
+  border-bottom: 1px solid #e7e9fc;
+}
 .button-portfolio-list {
   display: flex;
+  gap: 24px;
+  justify-content: center;
   padding-top: 96px;
+  margin-bottom: 72px;
 }
 
 .button-portfolio-link {
@@ -244,6 +326,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .button-portfolio-link:hover,
@@ -255,7 +340,30 @@ body {
 }
 
 .portfolio-list {
-  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 48px;
+  column-gap: 22px;
+
+  padding-bottom: 120px;
 }
 
-.portfolio-section;
+.portfolio-list-item {
+  /* border: 1px solid #e7e9fc; */
+}
+.portfolio-subtitle {
+  padding-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.portfolio-text {
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+.portfolio-border {
+  /* border: 1px solid #e7e9fc; */
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent #e7e9fc #e7e9fc #e7e9fc;
+}

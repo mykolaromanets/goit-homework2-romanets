@@ -20,31 +20,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="headre-nav">
+      <div class="container header-container container-portfolio">
+        <nav class="header-nav">
           <a href="./index.html" class="logo">
             <span class="logo-part">Web</span>studio</a
           >
-          <ul class="site-nav">
+          <ul class="header-list">
             <li><a href="./index.html" class="link">Studio</a></li>
             <li>
-              <a href="./portfolio.html" class="link current">Portfolio</a>
+              <a href="./portfolio.html" class="link">Portfolio</a>
             </li>
             <li><a href="#" class="link">Contacts</a></li>
           </ul>
         </nav>
         <address>
           <ul>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link-addres"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="link-addres"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
+            <div class="header-contacts">
+              <li>
+                <a href="mailto:info@devstudio.com" class="link-addres"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="link-addres"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </div>
           </ul>
         </address>
       </div>
@@ -77,85 +79,129 @@
             </li>
           </ul>
 
-          <ul class="portfolio-list">
-            <li>
-              <img
-                src="./images/img(5).jpg"
-                alt="Banking app project"
-                width="360"
-              />
-              <h2 class="section-subtitle">Banking App Interface Concept</h2>
-              <p class="section-text">App</p>
-            </li>
-            <li>
-              <img
-                src="./images/img(6).jpg"
-                alt="Paying using phone"
-                width="360"
-              />
-              <h2 class="section-subtitle">Cashless Payment</h2>
-              <p class="section-text">Marketing</p>
-            </li>
-            <li>
-              <img
-                src="./images/img(7).jpg"
-                alt="laptop and phone"
-                width="360"
-              />
-              <h2 class="section-subtitle">Meditaion App</h2>
-              <p class="section-text">App</p>
-            </li>
-            <li>
-              <img src="./images/img(8).jpg" alt="Car" width="360" />
-              <h2 class="section-subtitle">Taxi Service</h2>
-              <p class="section-text">Marketing</p>
-            </li>
-            <li>
-              <img src="./images/img(15).jpg" alt="Phone" width="360" />
-              <h2 class="section-subtitle">Screen Illustrations</h2>
-              <p class="section-text">Design</p>
-            </li>
-            <li>
-              <img
-                src="./images/img(9).jpg"
-                alt="Girl with headphones"
-                width="360"
-              />
-              <h2 class="section-subtitle">Online Courses</h2>
-              <p class="section-text">Marketing</p>
-            </li>
-            <li>
-              <img
-                src="./images/img(10).jpg"
-                alt="View of stories"
-                width="360"
-              />
-              <h2 class="section-subtitle">Instagram Stories Concept</h2>
-              <p class="section-text">Design</p>
-            </li>
-            <li>
-              <img
-                src="./images/img(11).jpg"
-                alt="Bag with fruits"
-                width="360"
-              />
-              <h2 class="section-subtitle">Organic Food</h2>
-              <p class="section-text">Web Site</p>
-            </li>
-            <li>
-              <img src="./images/img(14).jpg" alt="Cup of cofee" width="360" />
-              <h2 class="section-subtitle">Fresh Coffee</h2>
-              <p class="section-text">Web Site</p>
-            </li>
+          <ul>
+            <div class="portfolio-list">
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(5).jpg"
+                  alt="Banking app project"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="section-text portfolio-text">App</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(6).jpg"
+                  alt="Paying using phone"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Cashless Payment
+                  </h2>
+                  <p class="section-text portfolio-text">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(7).jpg"
+                  alt="laptop and phone"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Meditaion App
+                  </h2>
+                  <p class="section-text portfolio-text">App</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img src="./images/img(8).jpg" alt="Car" width="360" />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Taxi Service
+                  </h2>
+                  <p class="section-text portfolio-text">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img src="./images/img(15).jpg" alt="Phone" width="360" />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Screen Illustrations
+                  </h2>
+                  <p class="section-text portfolio-text">Design</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(9).jpg"
+                  alt="Girl with headphones"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Online Courses
+                  </h2>
+                  <p class="section-text portfolio-text">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(10).jpg"
+                  alt="View of stories"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="section-text portfolio-text">Design</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(11).jpg"
+                  alt="Bag with fruits"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Organic Food
+                  </h2>
+                  <p class="section-text portfolio-text">Web Site</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <img
+                  src="./images/img(14).jpg"
+                  alt="Cup of cofee"
+                  width="360"
+                />
+                <div class="portfolio-border">
+                  <h2 class="section-subtitle portfolio-subtitle">
+                    Fresh Coffee
+                  </h2>
+                  <p class="section-text portfolio-text">Web Site</p>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo-footer">
-          <span class="logo-part">Web</span>studio</a
-        >
+      <div class="container footer-container">
+        <div class="logo-combaine">
+          <a href="./index.html" class="logo-footer">
+            <span class="logo-part">Web</span>studio</a
+          >
+        </div>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
